@@ -28,6 +28,10 @@
                                 <label >Codigo del Producto</label>
                                 <input type="text" class="form-control"  placeholder="Codigo del Producto" name="codigoP">
                             </div>
+                            <div class="form-group">
+                                <label >Precio del Producto</label>
+                                <input type="number" class="form-control"  placeholder="Precio del Producto" name="precioP">
+                            </div>
                             <div >
                                <button class="btn btn-primary">Registrar</button>
                             </div>

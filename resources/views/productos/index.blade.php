@@ -7,6 +7,10 @@
           <h3 class="card-title">Todos los Productos</h3>
         </div>
         <!-- /.card-header -->
+        <div class="px-4">
+            <a href="{{route('producto.ordenar')}}" class="btn btn-success">Ordenar</a>
+        </div>
+
         <div class="card-body ">
           <table id="example2" class="table table-bordered table-hover">
             <thead>
@@ -15,6 +19,7 @@
               <th>Producto</th>
               <th>Descripcion</th>
               <th>codigo</th>
+              <th>precio</th>
               <th class="text-center">Acciones</th>
             </tr>
             </thead>
@@ -25,6 +30,7 @@
                     <td>{{$item->nombreP}}</td>
                     <td>{{$item->descripcionP}}</td>
                     <td>{{$item->codigoP}}</td>
+                    <td>{{$item->precioP}}</td>
                      <td class="d-flex justify-content-center">
                         <a href="{{route('producto.edit',$item->id)}}" class="btn btn-primary ">Edit</a>
                         <form action="{{route('producto.delete',$item->id)}}" method="POST" >

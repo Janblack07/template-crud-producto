@@ -21,3 +21,5 @@ Route :: post('/',[ProductoController::class,'store'])->name('producto.store');
 Route :: get('/edit/{id}',[ProductoController::class,'edit'])->name('producto.edit');
 Route :: delete('/delete/{id}',[ProductoController::class,'destroy'])->name('producto.delete');
 Route :: put('/update/{id}',[ProductoController::class,'update'])->name('producto.update');
+Route :: get('/ordenar',[ProductoController::class,'ordenar'])->name('producto.ordenar');
+Route :: post('/buscar',[ProductoController::class,'buscar'])->name('producto.search');

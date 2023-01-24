@@ -18,6 +18,7 @@ class CreateProductosTable extends Migration
             $table->string('nombreP');
             $table->string('descripcionP');
             $table->string('codigoP');
+            $table->double('precioP');
         });
     }
 

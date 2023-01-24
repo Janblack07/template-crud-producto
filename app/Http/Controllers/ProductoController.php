@@ -96,4 +96,12 @@ class ProductoController extends Controller
         return redirect('/');
 
     }
+    public function ordenar(){
+        $productos=Producto::orderBy('codigoP', 'desc')->get();
+        return view('productos.index', compact('productos'));
+    }
+    public function buscar(Request $request ){
+        $productos = Producto::where('nombreP','like','%'.$request->buscar.'%')->get();
+        return view('productos.index', compact('productos'));
+    }
 }
